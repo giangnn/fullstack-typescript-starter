@@ -37,7 +37,7 @@ module.exports = [{
 		publicPath: "/"
     },
     plugins: [
-        new LiveReloadPlugin({appendScriptTag:true}),
+        new LiveReloadPlugin({appendScriptTag:true, port: Math.floor((Math.random() * 2000) + 58000)}),
         new HtmlWebpackPlugin({
             template: 'src/static/index.html',
             inject: 'body',
